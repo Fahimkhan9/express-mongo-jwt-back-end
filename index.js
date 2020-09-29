@@ -13,7 +13,7 @@ const uri =
 
 var admin = require("firebase-admin");
 
-var serviceAccount = require("./secrets.json");
+var serviceAccount = require("./config/secrets.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
